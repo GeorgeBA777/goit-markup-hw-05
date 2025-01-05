@@ -473,5 +473,98 @@
         </div>
       </div>
     </footer>
+
+    <!-- BACKDROP -->
+
+    <div class="backdrop">
+      <div class="modal">
+        <!-- Кнопка закрытия -->
+        <button class="modal-close" type="button">
+          <svg class="icon-close" width="12" height="12">
+            <use href="./icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <!-- Текст заголовка -->
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <!-- Форма -->
+        <form>
+          <!-- Поле "Имя" -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              <svg class="icon" width="16" height="16">
+                <use href="./icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Поле "Телефон" -->
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone"
+                required
+              />
+              <svg class="icon" width="16" height="16">
+                <use href="./icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Поле "Email" -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <svg class="icon" width="16" height="16">
+                <use href="./icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Поле "Комментарий" -->
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Enter your comment"
+            ></textarea>
+          </div>
+
+          <!-- Принятие условий -->
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy">
+              I accept the terms of the <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <!-- Кнопка отправки -->
+          <button class="modal-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
